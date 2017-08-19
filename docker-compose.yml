@@ -1,0 +1,8 @@
+version: '3.0'
+
+services: 
+  node-red:
+    image: samtecspg/node-red-tutorials
+    ports: ['0.0.0.0:1880:1880']
+    volumes:
+      - ${NODERED_DATA:-./data}:/data
